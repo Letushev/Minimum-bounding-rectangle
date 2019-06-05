@@ -1,0 +1,59 @@
+%button {
+  width: 100%;
+  appearance: none;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  background: none;
+  font: inherit;
+  outline: none;
+  cursor: pointer;
+  color: #bdbdbd;
+  padding: 8px 8px;
+}
+
+.wrapper {
+  height: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-column-gap: 48px;
+}
+
+.canvasContainer {
+  height: 100vh;
+  overflow: auto;
+  border-left: 1px solid #bdbdbd;
+  cursor: pointer;
+}
+
+.controls {
+  padding-left: 24px;
+}
+
+.clearButton {
+  @extend %button;
+  border-color: #F44336;
+  color: #F44336;
+}
+
+.pointsCount {
+  padding: 24px 0;
+}
+
+.generation {
+  padding-top: 24px;
+}
+
+.countInput {
+  width: 100%;
+  padding: 4px 8px;
+  font: inherit;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+.generateButton {
+  @extend %button;
+  border-color: #2196F3;
+  color: #2196F3;
+}
